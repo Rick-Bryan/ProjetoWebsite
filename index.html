@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Monte seu treino</h1>
+        <form id="ajuster-form">
+            <div class="full-box">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+            </div>
+            <div class="half-box spacing">
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade" placeholder="Digite sua idade">
+
+            </div>
+            <div class="half-box spacing">
+                <label for="peso">Peso corporal</label>
+                <input type="text" name="peso" id="peso" placeholder="Digite seu peso">
+
+            </div>
+            <div class="half-box">
+                <label for="altura">Altura</label>
+                <input type="text" name="altura" id="altura" placeholder="Digite sua altura">
+        
+
+            </div>
+            <div class="full-box">
+                <label for="select-sex" id="select-sex">Selecione seu sexo</label>
+            </div>
+            
+            <div class="half-box-check">
+                <input type="checkbox" name="select-masc" id="select-masc" placeholder="Masculino">
+                <label for="select-masc" id="select-masc">Masculino</label>
+            </div>
+
+            <div class="half-box-check">
+                <input type="checkbox" name="select-fem" id="select-fem" placeholder="Feminino">
+                <label for="select-fem" id="select-fem">Feminino</label>
+            </div>
+
+            <div class="full-box">
+                <label for="select-time" id="select-label">Selecione o tempo desejado</label>
+            </div>
+
+            <div class="half-box-check">
+                <input type="checkbox" name="select-day" id="select-day" placeholder="1 Dia">
+                <label for="select-day" id="select-day">1 dia</label>
+            </div>
+
+            <div class="half-box-check">
+                <input type="checkbox" name="select-week" id="select-week" placeholder="1 Semana">
+                <label for="select-week" id="select-week">1 semana</label>
+            </div>
+
+            <div class="half-box-check">
+                <input type="checkbox" name="select-mounth" id="select-mounth" placeholder="1 Mês">
+                <label for="select-mounth" id="select-mounth">1 Mês</label>
+            </div>
+
+                
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Montar Treino" onclick="cadPessoa()">
+            </div>
+                
+                
+    </div>
+        </form>
+    <div id="dtPessoas">
+        <table id="tbPessoa">
+            <thead>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Terça</td>
+                    <td>Quarta</td>
+                    <td>Quinta</td>
+                    <td>Sexta</td>
+                    <td>sábado</td>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+    </div>    
+    <p class="error-validation template">
+        
+    </p>
+    <script src="script.js"></script>
+    
+</body>
+</html>
